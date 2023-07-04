@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,73 +13,44 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row col-sm-12">
-            <nav class="navbar bg-body-tertiary fixed-top">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="./index.html"><img src="./Img/image.png" alt="Logo"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./Img/image.png" alt="Logo"></h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="header container-fluid">
+                <a class="navbar-brand" href="./index.html"><img class="logo" src="./Img/image.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="./pages/info.html">Sobre mi</a>
+                        <a class="nav-link" href="./pages/conocimientos.html">Conocimientos</a>
+                        <a class="nav-link" href="./pages/contacts.html">Contactame</a>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html" title="Inicio">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/portfolio.html" title="Portfolio">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/info.html" title="Sobre mi">Sobre mi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/conocimientos.html" title="Recomendaciones">Recomendaciones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacts.html" title="Contactame">Contactame</a>
-                            </li>
-                        </ul>
-                      
-                    </div>
-                  </div>
                 </div>
-              </nav>
-            <!--<a href="./index.html"><img src="./Img/image.png" alt="Logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html" title="Inicio">Inicio</a></li>
-                    <li><a href="./pages/portfolio.html" title="Portfolio">Portfolio</a></li>
-                    <li><a href="./pages/info.html" title="Sobre mi">Sobre mi</a></li>
-                    <li><a href="./pages/conocimientos.html" title="Recomendaciones">Recomendaciones</a></li>
-                    <li><a href="./pages/contacts.html" title="Contactame">Contactame</a></li>
-                </ul>
-            </nav>-->
-        </div>   
+            </div>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h1>Whillder Escalante</h1>
-            <p> Te invito a conocerme - Programador frontend Developer Jr -</p>
+    <main class="inicio">
+        <section class="container">
+            <div class="col-12">
+                <h1>Whillder Escalante</h1>
+            </div>
+            <div class="contenido row">
+                <img src="./Img/Modificando.svg" class="col-12 col-md-6 col-lg-6" alt="Mi foto">
+                    <p class="col-12 col-md-6 col-lg-6">Te invito a conocerme - Programador frontend Developer Jr</p>
+            </div>      
         </section>
-        <div class="container">
-            <img src="./Img/Modificando.svg" alt="Mi foto">
-        </div>
-        
-
     </main>
     <footer>
-        <nav>
-            <ul>
-                <li><a href="./index.html" title="Inicio">Inicio</a></li>
-                <li><a href="./pages/portfolio.html" title="Portfolio">Portfolio</a></li>
-                <li><a href="./pages/info.html" title="Sobre mi">Sobre mi</a></li>
-                <li><a href="./pages/conocimientos.html" title="conocimientos">Conocimientos</a></li>
-                <li><a href="./pages/contacts.html" title="Contactame">Contactame</a></li>
+        <nav class="container-fluid">
+            <ul class="navbar-nav">
+                <li><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+                <li><a class="nav-link" href="./pages/portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link" href="./pages/info.html">Sobre mi</a></li>
+                <li><a class="nav-link" href="./pages/conocimientos.html">Conocimientos</a></li>
+                <li><a class="nav-link" href="./pages/contacts.html">Contactame</a></li>
             </ul>
         </nav>
         <p>

@@ -7,12 +7,22 @@
     box-sizing: border-box;
 }
 body{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../Img/backgroud.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
-    
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    margin:0;
 }
 /*header*/
-header{
+.header{
     background-color: #295264;
 }
 header div {
@@ -20,10 +30,13 @@ header div {
     justify-content: space-between;
     align-items: center;
 }
-
-.logo img{
+button {
+    border: 0;
+}
+.logo {
     height: 90px;
     width: 90px;
+    padding: 5px;
 }
 header nav ul{
     padding-right: 20px;
@@ -34,37 +47,57 @@ nav ul li{
 }
 nav ul li a:hover{
     
-    text-decoration: underline;
+    color: #000;
 
 }
-header a {
+.nav-link {
     text-decoration: none;
     color: #fff;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin:0%;
+    padding: 5px 0px 5px 0px;
+}
+.navbar{
+    padding: 0 0 0 0;
 }
 /*main*/
 main{
-    background-color: #f7f3d5;
-    height: 70vh;
+    background-color: transparent;
+    height: auto;
+    margin: auto 0px auto 0px;
 }
 main h1 {
-    color: #295264;
+    color: #ffffff;
     text-align: center;
-    padding-top: 10px;
 }
 /*Index*/
+.inicio section {
+    display: flex;
+    flex-direction: column;
+}
 .inicio section h1{
     text-align: center;
 }
 .inicio section p{
     text-align: center;
+    color: #fff;
 }
 .inicio div img{
-    padding: 20px 0 0 20px;
-    height: 500px;
-    width: auto;
+    width: 400px;
+    padding: 0;
+}
+.contenido{
+    display: flex;
+    margin: 0;
+}
+.contenido p{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 /*Conocimientos*/
 .conocimientos div p{
@@ -81,7 +114,7 @@ main h1 {
     height: 300px;
     text-align: center;
     margin-block: auto;
-    border:#295264 solid;
+    border:#ffffff solid;
 }
 .slices img{
     text-align: center;
@@ -95,7 +128,7 @@ main h1 {
     display: inline-block;
     height: 150px;
     width: 250px;
-    border: #295264 solid;
+    border: #ffffff solid;
     border-radius: 10%;
     margin: 10px;
 }
@@ -107,7 +140,7 @@ main h1 {
     display: inline-block;
     height: 300px;
     text-align: center;
-    border:#295264 solid;
+    border:#ffffff solid;
 }
 .slice iframe{
     text-align: center;
@@ -115,7 +148,7 @@ main h1 {
     height: 30vh;
 }
 .sobreMi h2{
-    color: #295264;
+    color: #ffffff;
     text-align: left;
     padding: 10px 0 10px 20px; 
 }
@@ -129,8 +162,15 @@ main h1 {
 .conocimientos{
     height: auto;
 }
+.conocimientos section{
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    margin: 2px;
+}
 .conocimientos section p{
     display: inline;
+    color: #fff;
 }
 .contacts{
     text-align: center;
@@ -140,7 +180,7 @@ main h1 {
     display: inline-block;
     padding: 20px;
     width: 320px;
-    border: #295264 solid;
+    border: #ffffff solid;
     margin: 20px;
 }
 .contacts form div {
@@ -187,12 +227,27 @@ main h1 {
 
 /*footer*/
 footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     background-color: #295264;
-    height: 15vh;
+    justify-content: space-around;
+}
+footer ul.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 footer p{
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
     color: darkgray;
+    font-size: 13px;
 }
 footer nav{
     text-align: end;
