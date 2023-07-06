@@ -60,6 +60,7 @@ nav a :hover{
 main{
     background-color: transparent;
     height: auto;
+    margin-bottom: 10px;
 }
 main h1 {
     color: #ffffff;
@@ -148,28 +149,43 @@ main h1 {
     text-align: center;
     border:#ffffff solid;
 }
-.slice iframe{
-    text-align: center;
-    margin: 10px;
-    height: 30vh;
-}
+
 /*Info*/
-.sobreMi h2{
-    color: #ffffff;
-    text-align: left;
-    padding: 10px 0 10px 20px; 
+.sobreMi .row{
+    margin: 0;
+    justify-content: space-evenly;
 }
-.sobreMi section{
-    margin-top: 20px;
+.sobreMi .row p{
+    font-size: 15px;
 }
-.sobreMi section a {
-    display: block;
-    padding: 5px 0 5px 20px;
+.card{
+    width: 18rem;
+    margin: 5px 5px 5px 5px;
+    background-color: #ffffff;
+}
+.sobreMi iframe{    
+    margin-top: 10px;
+    height: 25vh;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+h5{
+    text-align: center;
+}
+.sobreMi .card a{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
 }
 
 /*Conocimientos*/
-.conocimientos div p{
-    padding: 20px;
+.conocimientos button{
+    padding: 0px 20px 0 0;
+}
+.progress{
+    background-color: #868788cf;
 }
 .imagenp{
     display: inline;
@@ -178,69 +194,58 @@ main h1 {
     height: 100px;
     width: 100px;
 }
-.conocimientos section{
-    display: flex;
-    align-items: center;
-    border: 1px solid #fff;
-    margin: 2px;
-}
 .conocimientos section p{
-    display: inline;
-    color: #fff;
+    margin: 0;
 }
-
 /*contacts*/
 .contacts{
     text-align: center;
 }
 .contacts form{
-    text-align: center;
-    display: inline-block;
-    padding: 20px;
-    width: 320px;
-    border: #ffffff solid;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
 }
 .contacts form div {
-    margin-bottom: 5px;
+    margin: 5px;
+    width: 80%;
 }
 .contacts form div label {
-    display: inline-block;
-    width: 100px;
-    line-height: 20px;
+    margin: 5px;
+    color: #fff;
+    padding: 1px;
 }
 .contacts form div input {
-    display: inline-block;
-    width: 200px;
+    
+    height: 25px;
 
 }
 .contacts form div textarea {
-    display: inline-block;
-    width: 310px;
-    outline: none;
+    padding: 1px;
 
 }
 .contacts form div button {
-    width: 315px;
-    height: 30px;
-    color: rgb(2, 2, 2);
-    background-color: rgb(110, 110, 110);
-    padding: 1px;
-    font-size: 20px;
+    margin-top: 20px;
+    padding: 2px;
 }
-.contacts section{
-    display: inline;
-    padding: 20px;
+/* .row .form-control{
+    width:auto;
+} */
+.contacts iframe {
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
 
+}
+.contacts .row img{
+    height: 60px;
+    width: 60px;
 }
 
 .whatssap{
-    display: block;
-    position: fixed;
-    right: 90px;
-    bottom: 150px;
-    background-color: #295264;
-
+    border-radius: 50%;
 }
 
 /*footer*/
@@ -281,7 +286,7 @@ footer a {
     text-align: right;
 }
 
-@media (max-width: 500px){
+@media (max-width: 550px){
     .inicio{
         height: auto;
     }
@@ -297,5 +302,8 @@ footer a {
     main{
         margin: 10px 0 10px 0;
     }
+    .contacts form div {
+        display: flex;
+        flex-direction: column;
 
 }
