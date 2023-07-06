@@ -28,7 +28,6 @@ a {
 header div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 button {
     border: 0;
@@ -45,10 +44,8 @@ nav ul li{
     display: inline-flex;
     padding-left: 20px;
 }
-nav ul li a:hover{
-    
+nav a :hover{
     color: #000;
-
 }
 .nav-link {
     text-decoration: none;
@@ -63,13 +60,20 @@ nav ul li a:hover{
 main{
     background-color: transparent;
     height: auto;
-    margin: auto 0px auto 0px;
 }
 main h1 {
     color: #ffffff;
     text-align: center;
+    margin: 40px 0;
 }
 /*Index*/
+.inicio{
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .inicio section {
     display: flex;
     flex-direction: column;
@@ -81,13 +85,19 @@ main h1 {
     text-align: center;
     color: #fff;
 }
-.inicio div img{
-    width: 400px;
-    padding: 0;
-}
 .contenido{
     display: flex;
     margin: 0;
+}
+.contenido div img{
+    width: 100%;
+    height: 100%;
+}
+.contenido .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 .contenido p{
     color: #fff;
@@ -99,38 +109,34 @@ main h1 {
     padding: 0;
     margin: 0;
 }
-/*Conocimientos*/
-.conocimientos div p{
-    padding: 20px;
-}
-.imagenp{
-    display: inline;
-    justify-items: center;
-    padding:20px;
-    height: 100px;
-    width: 100px;
-}
+/*Portfolio*/
 .slices{
-    height: 300px;
+    height: 400px;
     text-align: center;
     margin-block: auto;
     border:#ffffff solid;
 }
 .slices img{
+    height: 100%;
     text-align: center;
     margin-left: 20px;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 .portfolio p{
     text-align: center;
     padding: 10px 0 0 0;
 }
-.portfolio a{
-    display: inline-block;
-    height: 150px;
-    width: 250px;
-    border: #ffffff solid;
-    border-radius: 10%;
-    margin: 10px;
+.portfolio:hover a{
+    cursor: pointer;
+    color: #000;
 }
 .portfolio section{
     text-align: center;
@@ -147,6 +153,7 @@ main h1 {
     margin: 10px;
     height: 30vh;
 }
+/*Info*/
 .sobreMi h2{
     color: #ffffff;
     text-align: left;
@@ -159,8 +166,17 @@ main h1 {
     display: block;
     padding: 5px 0 5px 20px;
 }
-.conocimientos{
-    height: auto;
+
+/*Conocimientos*/
+.conocimientos div p{
+    padding: 20px;
+}
+.imagenp{
+    display: inline;
+    justify-items: center;
+    padding:20px;
+    height: 100px;
+    width: 100px;
 }
 .conocimientos section{
     display: flex;
@@ -172,6 +188,8 @@ main h1 {
     display: inline;
     color: #fff;
 }
+
+/*contacts*/
 .contacts{
     text-align: center;
 }
@@ -227,6 +245,7 @@ main h1 {
 
 /*footer*/
 footer{
+    margin-top: auto;
     width: 100%;
     height: auto;
     display: flex;
@@ -260,4 +279,23 @@ footer a {
     text-decoration: none;
     color: #fff;
     text-align: right;
+}
+
+@media (max-width: 500px){
+    .inicio{
+        height: auto;
+    }
+    .contenido .texto {
+        align-items: center;
+    }
+    footer ul.navbar-nav{
+        flex-direction: column;
+    }
+    footer p{
+        font-size: 8px;
+    }
+    main{
+        margin: 10px 0 10px 0;
+    }
+
 }
