@@ -1,0 +1,32 @@
+/*Info*/
+.sobreMi {
+    .row {
+        margin: 0;
+        justify-content: space-evenly;
+
+        .card {
+            width: 18rem;
+            margin: 5px 5px 5px 5px;
+            background-color: #ffffff;
+            iframe {
+                margin-top: 10px;
+                height: 25vh;
+            }
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                h5 {
+                    text-align: center;
+                }
+                p {
+                    font-size: 15px;
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}

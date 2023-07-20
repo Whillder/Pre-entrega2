@@ -1,0 +1,31 @@
+/*footer*/
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary_bg;
+    justify-content: space-around;
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        img {
+            height: 60px;
+            width: 60px;
+            }
+            .whatssap img {
+                padding: 5px;
+                border-radius: 50px;
+            }
+        
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        color: darkgray;
+        font-size: 13px;
+    }
+}

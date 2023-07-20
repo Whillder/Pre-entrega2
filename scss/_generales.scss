@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Indie Flower", cursive;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../Img/backgroud.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*main*/
+main {
+    background-color: transparent;
+    height: auto;
+    margin-bottom: 10px;
+
+    h1 {
+        color: $font-color;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font-color;
+        margin: 0;
+    }
+}

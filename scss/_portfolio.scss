@@ -1,0 +1,36 @@
+/*Portfolio*/
+.portfolio {
+    p {
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+
+    .slices {
+        height: 400px;
+        text-align: center;
+        margin-block: auto;
+        border: #ffffff solid;
+
+        .carousel-inner {
+            height: 100%;
+
+            .carousel-item.active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    text-align: center;
+                    margin-left: 20px;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}

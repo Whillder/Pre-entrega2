@@ -1,309 +1,291 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;500&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;500&display=swap"); /*Variables*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Indie Flower", cursive;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url('../Img/backgroud.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../Img/backgroud.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
-a {
-    text-decoration: none;
-    color: #ffffff;
-    margin:0;
-}
-/*header*/
-.header{
-    background-color: #295264;
-}
-header div {
-    display: flex;
-    justify-content: space-between;
-}
-button {
-    border: 0;
-}
-.logo {
-    height: 90px;
-    width: 90px;
-    padding: 5px;
-}
-header nav ul{
-    padding-right: 20px;
-}
-nav ul li{
-    display: inline-flex;
-    padding-left: 20px;
-}
-nav a :hover{
-    color: #000;
-}
-.nav-link {
-    text-decoration: none;
-    color: #fff;
-    margin:0%;
-    padding: 5px 0px 5px 0px;
-}
-.navbar{
-    padding: 0 0 0 0;
-}
+
 /*main*/
-main{
-    background-color: transparent;
-    height: auto;
-    margin-bottom: 10px;
+main {
+  background-color: transparent;
+  height: auto;
+  margin-bottom: 10px;
 }
 main h1 {
-    color: #ffffff;
-    text-align: center;
-    margin: 40px 0;
+  color: #ffffff;
+  text-align: center;
+  margin: 40px 0;
 }
+main a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0;
+}
+
+/*header*/
+header a.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0%;
+}
+header a.nav-link a:hover {
+  color: #000000;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar {
+  padding: 0 0 0 0;
+}
+header .navbar .header {
+  background-color: #295264;
+}
+header .navbar .header .logo {
+  height: 90px;
+  width: 90px;
+  padding: 5px;
+}
+header .navbar .header button {
+  border: 0;
+}
+
 /*Index*/
-.inicio{
-    margin: auto;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.inicio {
+  margin: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .inicio section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.inicio section h1{
-    text-align: center;
+.inicio section h1 {
+  text-align: center;
 }
-.inicio section p{
-    text-align: center;
-    color: #fff;
+.inicio section {
+  display: flex;
+  flex-direction: column;
 }
-.contenido{
-    display: flex;
-    margin: 0;
+.inicio section .contenido {
+  display: flex;
+  margin: 0;
+  align-items: center;
 }
-.contenido div img{
-    width: 100%;
-    height: 100%;
+.inicio section .contenido img {
+  width: 100%;
+  height: 100%;
 }
-.contenido .texto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+.inicio section .contenido .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-.contenido p{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+.inicio section .contenido .texto .accordion {
+  margin-bottom: 110px;
+  --bs-accordion-bg: transparent;
+  --bs-accordion-active-bg: #ffffff75;
+  backdrop-filter: blur(5px);
 }
+.inicio section .contenido .texto p {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
 /*Portfolio*/
-.slices{
-    height: 400px;
-    text-align: center;
-    margin-block: auto;
-    border:#ffffff solid;
+.portfolio p {
+  text-align: center;
+  padding: 10px 0 0 0;
 }
-.slices img{
-    height: 100%;
-    text-align: center;
-    margin-left: 20px;
+.portfolio .slices {
+  height: 400px;
+  text-align: center;
+  margin-block: auto;
+  border: #ffffff solid;
 }
-.carousel-inner {
-    height: 100%;
+.portfolio .slices .carousel-inner {
+  height: 100%;
 }
-.carousel-item.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.portfolio .slices .carousel-inner .carousel-item.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-.portfolio p{
-    text-align: center;
-    padding: 10px 0 0 0;
+.portfolio .slices .carousel-inner .carousel-item.active img {
+  height: 100%;
+  text-align: center;
+  margin-left: 20px;
 }
-.portfolio:hover a{
-    cursor: pointer;
-    color: #000;
-}
-.portfolio section{
-    text-align: center;
-}
-.slice{
-    margin-left: 20px;
-    display: inline-block;
-    height: 300px;
-    text-align: center;
-    border:#ffffff solid;
+.portfolio .slices .carousel-inner .carousel-item.active a:hover {
+  cursor: pointer;
+  color: #000000;
 }
 
 /*Info*/
-.sobreMi .row{
-    margin: 0;
-    justify-content: space-evenly;
+.sobreMi .row {
+  margin: 0;
+  justify-content: space-evenly;
 }
-.sobreMi .row p{
-    font-size: 15px;
+.sobreMi .row .card {
+  width: 18rem;
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
 }
-.card{
-    width: 18rem;
-    margin: 5px 5px 5px 5px;
-    background-color: #ffffff;
+.sobreMi .row .card iframe {
+  margin-top: 10px;
+  height: 25vh;
 }
-.sobreMi iframe{    
-    margin-top: 10px;
-    height: 25vh;
+.sobreMi .row .card .card-body {
+  display: flex;
+  flex-direction: column;
 }
-.card-body{
-    display: flex;
-    flex-direction: column;
+.sobreMi .row .card .card-body h5 {
+  text-align: center;
 }
-h5{
-    text-align: center;
+.sobreMi .row .card .card-body p {
+  font-size: 15px;
 }
-.sobreMi .card a{
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
+.sobreMi .row .card .card-body a {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
 }
 
 /*Conocimientos*/
-.conocimientos button{
-    padding: 0px 20px 0 0;
+.conocimientos button {
+  padding: 0px 20px 0 0;
 }
-.progress{
-    background-color: #868788cf;
+.conocimientos button .imagenp {
+  display: inline;
+  justify-items: center;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
 }
-.imagenp{
-    display: inline;
-    justify-items: center;
-    padding:20px;
-    height: 100px;
-    width: 100px;
+.conocimientos button p {
+  margin: 0;
 }
-.conocimientos section p{
-    margin: 0;
+.conocimientos .progress {
+  background-color: rgba(134, 135, 136, 0.8117647059);
 }
+.conocimientos .progress p {
+  margin: 0;
+}
+
 /*contacts*/
-.contacts{
-    text-align: center;
+.contacts {
+  text-align: center;
 }
-.contacts form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px #ffffff solid;
-    border-radius: 10px;
+.contacts form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px #ffffff solid;
+  border-radius: 10px;
 }
 .contacts form div {
-    margin: 5px;
-    width: 80%;
+  margin: 5px;
+  width: 80%;
 }
 .contacts form div label {
-    margin: 5px;
-    color: #fff;
-    padding: 1px;
+  margin: 5px;
+  color: #ffffff;
+  padding: 1px;
 }
 .contacts form div input {
-    
-    height: 25px;
-
+  height: 25px;
 }
 .contacts form div textarea {
-    padding: 1px;
-
+  padding: 1px;
 }
 .contacts form div button {
-    margin-top: 20px;
-    padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px;
+  width: 100%;
 }
-/* .row .form-control{
-    width:auto;
-} */
 .contacts iframe {
-    margin-top: 10px;
-    width: 90%;
-    height: 90%;
-
+  margin-top: 10px;
+  width: 90%;
+  height: 90%;
 }
-.contacts .row img{
-    height: 60px;
-    width: 60px;
-}
-
-.whatssap{
-    border-radius: 50%;
+.contacts .redes {
+  margin-top: 10px;
 }
 
 /*footer*/
-footer{
-    margin-top: auto;
-    width: 100%;
+footer {
+  margin-top: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #295264;
+  justify-content: space-around;
+}
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .redes img {
+  height: 60px;
+  width: 60px;
+}
+footer .redes .whatssap img {
+  padding: 5px;
+  border-radius: 50px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  color: darkgray;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .inicio {
     height: auto;
+  }
+  .inicio section .contenido .texto {
+    align-items: center;
+  }
+  .inicio section .contenido .texto .accordion {
+    margin-top: 20px;
+  }
+  footer p {
+    font-size: 8px;
+  }
+  main {
+    margin: 10px 0 10px 0;
+  }
+  .contacts form div {
     display: flex;
     flex-direction: column;
-    background-color: #295264;
-    justify-content: space-around;
-}
-footer ul.navbar-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-footer p{
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    color: darkgray;
-    font-size: 13px;
-}
-footer nav{
-    text-align: end;
-    padding: 10px 20px 0 0;
-}
-footer nav ul{
-    padding-left: 0;
-}
-footer a {
-    text-decoration: none;
-    color: #fff;
-    text-align: right;
+  }
 }
 
-@media (max-width: 550px){
-    .inicio{
-        height: auto;
-    }
-    .contenido .texto {
-        align-items: center;
-    }
-    footer ul.navbar-nav{
-        flex-direction: column;
-    }
-    footer p{
-        font-size: 8px;
-    }
-    main{
-        margin: 10px 0 10px 0;
-    }
-    .contacts form div {
-        display: flex;
-        flex-direction: column;
-
-}
+/*# sourceMappingURL=style.css.map */

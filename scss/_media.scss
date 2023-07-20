@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .inicio {
+        height: auto;
+        section .contenido .texto {
+            align-items: center;
+        .accordion {
+            margin-top: 20px;
+        }
+    }
+    }
+    footer p {
+        font-size: 8px;
+    }
+
+    main {
+        margin: 10px 0 10px 0;
+    }
+
+    .contacts form div {
+        display: flex;
+        flex-direction: column;
+    }
+}

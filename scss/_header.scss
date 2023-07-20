@@ -1,0 +1,35 @@
+/*header*/
+header {
+    a.nav-link {
+        text-decoration: none;
+        color: $font-color;
+        margin: 0%;
+
+        a:hover {
+            color: $hover-color;
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        padding: 0 0 0 0;
+
+        .header {
+            background-color: $primary_bg;
+
+            .logo {
+                height: 90px;
+                width: 90px;
+                padding: 5px;
+            }
+
+            button {
+                border: 0;
+            }
+        }
+    }
+}

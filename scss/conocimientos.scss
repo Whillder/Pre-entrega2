@@ -1,0 +1,22 @@
+/*Conocimientos*/
+.conocimientos {
+    button {
+    padding: 0px 20px 0 0;
+    .imagenp {
+        display: inline;
+        justify-items: center;
+        padding: 20px;
+        height: 100px;
+        width: 100px;
+            }
+    p {
+        margin: 0;
+    }
+    }
+    .progress {
+        background-color: #868788cf;
+        p {
+            margin: 0;
+        }
+    }
+}
